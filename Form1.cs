@@ -31,12 +31,6 @@ namespace CryptographyTool
             InitializeComponent();
         }
 
-        //private void ResetProgressBar() 
-        //{ 
-        //    totalBytes = 0; 
-        //    progressBar1.Value = 0; 
-        //}
-
         private void buttonEncryptFile_Click(object sender, EventArgs e)
         {
             if (_rsa is null)
@@ -135,16 +129,6 @@ namespace CryptographyTool
                     ? $"Key: {_cspp.KeyContainerName} - Public Only"
                     : $"Key: {_cspp.KeyContainerName} - Full Key Pair";
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void _encryptOpenFileDialog_FileOk(object sender, CancelEventArgs e)
-        {
-
         }
 
         private void EncryptFile(FileInfo file)
@@ -310,10 +294,5 @@ namespace CryptographyTool
                 }
             }
         }
-
-        //private void Form1_Load(object sender, EventArgs e)
-        //{
-        //    this.progressBar1.Increment(1);
-        //}
     }
 }
